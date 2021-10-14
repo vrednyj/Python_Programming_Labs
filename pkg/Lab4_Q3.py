@@ -21,7 +21,7 @@ import os
 import datetime
 from time import *
 
-user_db={}
+user_db={} # Wiil be a dictionary with user name and specs.
 os_selection={}
 requirement_list=[]
 os_requirements={"Windows 10":16, "Ubuntu":8, "MacOS":32, "OS/2":4}
@@ -55,11 +55,14 @@ while 1:
         pass
 clear_the_screen()
 
+os_selection.clear() # reseting dictionary
+
 order=1
 for i in (additional_software.keys()):
     print("{0} {1}".format(order,i))
     os_selection[order]=i
     order+=1
+
 
 while 1:
     software_selection=input("Please select the software:")
