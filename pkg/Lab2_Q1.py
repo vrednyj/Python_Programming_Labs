@@ -14,3 +14,5 @@ print("1234".isdigit())
 #-> True
 print(r"C:\users\ndarby\python3\python-3.5.1\bin")
 #-> C:\users\ndarby\python3\python-3.5.1\bin
+
+

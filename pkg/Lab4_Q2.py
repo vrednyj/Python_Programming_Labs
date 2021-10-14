@@ -33,15 +33,15 @@ common_number_count=0
 for a in range(len(List_of_names_1)): #Assigning lottery numbers for each player for week 1
     for i in range(6):
         random_numbers.append(random.randint(1,45))
-        random_numbers.sort()
+    random_numbers.sort()
     week_1_players[List_of_names_1[a]]=random_numbers
     random_number_list+random_numbers
     random_numbers = [] #reseting lotto numbers to asign a new numbers to the next player
 
 for a in range(len(List_of_names_2)): #Assigning lottery numbers for each player for week 2
     for i in range(6):
-        random_numbers.append(random.randint(1,20))
-        random_numbers.sort()
+        random_numbers.append(random.randint(1,45))
+    random_numbers.sort()
     week_2_players[List_of_names_2[a]]=random_numbers
     random_number_list=random_number_list+random_numbers
     random_numbers = [] #reseting lotto numbers to asign a new numbers to the next player
@@ -69,5 +69,5 @@ for s in range(len(gamblers)):
         if i in week_2_players[gamblers[s]]:
             #print(i) #for debug
             #print([gamblers[s]]) #for debug
-            print("{0} selected number {1} multiple times".format(gamblers[s],i))
+            print("{0} has selected number {1} multiple times".format(gamblers[s],i))
 

@@ -18,3 +18,4 @@ and advance the Python programming language, and to support and facilitate
 the growth of a diverse and international community of Python programmers'''
 
 print("The last instance of the word Python is: {}".format(python_mission.rfind("Python")))
+#string.rfind() starts searching from the end

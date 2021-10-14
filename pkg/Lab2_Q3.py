@@ -18,5 +18,7 @@ not use loops or selection structures. Modify your answer to take in the suffix_
 suffix_no=1122
 print('L{:08d}'.format(suffix_no))
 
-suffix_no=input("Please enter student number:")
-print('L{:08d}'.format(int(suffix_no)))
+suffix_no=input("Please enter your student number:")
+print('L{:08d}'.format(int(suffix_no))) #converting string from the input inot int
+#or
+print('L{:0>8s}'.format(suffix_no))# not converting string. Enother method.

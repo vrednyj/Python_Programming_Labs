@@ -23,6 +23,7 @@ user_name=string[20:31]
 user_dir=string[32:46]
 user_shell=string[47:56]
 
+# Manipulating string. Cutting to required peaces.
 print("Login: {}".format(user_login))
 print("User type: {}".format(user_type))
 print("Password: {}".format(password))
@@ -31,6 +32,7 @@ print("User name: {}".format(user_name))
 print("User Dir: {}".format(user_dir))
 print("Working shell: {}".format(user_shell))
 
+#spliting string by ":" and coverting it into the list. The using the list elements below.
 string=string.split(":")
 print("\n{:*^50}\n".format("Another method"))
 print("Login: {}".format(string[0]))
