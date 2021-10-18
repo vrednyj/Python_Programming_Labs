@@ -21,8 +21,8 @@ import os
 import datetime
 from time import *
 
-user_db={} # Wiil be a dictionary with user name and specs.
-os_selection={}
+user_db={} # Will be a dictionary with user name and specs in format{user_name:[requirement_list]}
+os_selection={} #will use to draw interface
 requirement_list=[]
 os_requirements={"Windows 10":16, "Ubuntu":8, "MacOS":32, "OS/2":4}
 additional_software={"None":0,"Pycharm":1,"Eclips":2,"Maven":6}
@@ -95,7 +95,7 @@ clear_the_screen()
 requirement_list.append(os_requirements[requirement_list[0]]+additional_software[requirement_list[1]])
 user_db[user_name]=requirement_list
 print("The user {0} has requested on {1}\nthe following software: {2} and {3} to use before "
-      "{4} date.\nThis configuration requires of {5} RAM of the Virtual Machine.\n "
+      "{4} date.\nThis configuration requires {5} of RAM of the Virtual Machine.\n "
       .format(user_name, user_db[user_name][3], user_db[user_name][0], user_db[user_name][1],
               user_db[user_name][2], user_db[user_name][4]))
 
