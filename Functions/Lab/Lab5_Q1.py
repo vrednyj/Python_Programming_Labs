@@ -15,10 +15,12 @@ import os.path
 import platform
 import sys
 
-print("{0:<20}:{1:}".format("Node:",platform.node()))
-print("{0:<20}:{1:}".format("Operating system",platform.system()))
-print("{0:<20s}:{1:}".format("OS Version:",platform.win32_ver()))
-print("{0:<20s}:{1:}".format("Platform:",platform.machine()))
-print("{0:20s}:{1:}".format("Processor:",platform.processor()))
-print("{0:<20s}:{1:}".format("Python Version:",platform.python_version()))
-print("{0:<20s}:{1:}".format("Working Path:",str(os.getcwd())))
+if __name__=='__main__':
+    print("{0:<20}:{1:}".format("Node:",platform.node()))
+    print("{0:<20}:{1:}".format("Operating system",platform.system()))
+    print("{0:<20s}:{1:}".format("OS Version:",platform.win32_ver()))
+    print("{0:<20s}:{1:}".format("Platform:",platform.machine()))
+    print("{0:20s}:{1:}".format("Processor:",platform.processor()))
+    print("{0:<20s}:{1:}".format("Python Version:",platform.python_version()))
+    print("{0:<20s}:{1:}".format("Working Path:",str(os.getcwd())))
+

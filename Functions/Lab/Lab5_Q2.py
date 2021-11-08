@@ -20,7 +20,9 @@ def password_encription(a):
     output = hashlib.sha256(bytes(a, encoding='utf-8')).hexdigest()
     print("The password was encripted to:{}".format(output))
 
-password = input("Please enter your password for encripton:")
-t = Timer(lambda: password_encription(password))
-return_time=t.timeit(number=1)
-print("It took:{} seconds".format(return_time))
+if __name__=='__main__':
+
+    password = input("Please enter your password for encripton:")
+    t = Timer(lambda: password_encription(password))
+    return_time=t.timeit(number=1)
+    print("It took:{} seconds".format(return_time))

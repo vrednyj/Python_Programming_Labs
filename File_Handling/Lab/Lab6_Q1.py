@@ -29,5 +29,7 @@ def practice_q(dir_for_search):
      else:
          print("Such folder {0} does not exist".format(dir_for_search))
 
-dir_for_search=input("Please enter the directory for search:")
-practice_q(dir_for_search)
+
+if __name__=='__main__':
+    dir_for_search=input("Please enter the directory for search:")
+    practice_q(dir_for_search)

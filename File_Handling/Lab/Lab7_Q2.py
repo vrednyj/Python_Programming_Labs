@@ -14,4 +14,5 @@ comment related to the field but show it in a lighter colour.
 As a second menu option show which deadlines have slipped and the pertinent summary
 information.'''
 
-print("Not sure what the Change Management Log is.")
+if __name__=='__main__':
+    print("Not sure what the Change Management Log is.")

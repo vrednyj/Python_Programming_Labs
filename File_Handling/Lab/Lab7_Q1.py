@@ -14,4 +14,6 @@ and by converting all strings to proper case (title()). Then count the number of
 values in each of the columns. Split the telephone number into it’s three constituent parts and write
 the clean data to a new file.
 '''
-print("Not sure what the transaction file the talk is about here. ")
+
+if __name__=='__main__':
+    print("Not sure what the transaction file the talk is about here. ")

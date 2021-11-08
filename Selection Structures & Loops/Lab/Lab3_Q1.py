@@ -20,7 +20,7 @@ input_message="Please guess the number between 1 and 10 or press \"q\" to exit:"
 number_of_guess=0
 while 1:
     user_guess=input(input_message)
-    print("You have entered: {}".format(user_guess)) #bring on the screen the number entered by the user
+    print("You have entered: {}".format(user_guess)) #brings on the screen the number entered by the user
     number_of_guess+=1 #counter to count number of guesses
 
     # checks if the entered value is digit and it's not equal to the looking number.

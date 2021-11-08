@@ -58,16 +58,18 @@ def print_main_menu():
     return
 
 #print_main_menu()
+if __name__=='__main__':
 
-while True:
-    print_main_menu()
-    selection=input("Please choose your selection:")
-    try:
-        if selection.isdigit()==True and int(selection) < 5 : # checking if correct selection
-            list_of_functions[int(selection)]() #calls the function from list_of_functions dictionary
-        else:
+    while True:
+        print_main_menu()
+        selection=input("Please choose your selection:")
+        try:
+            if selection.isdigit()==True and int(selection) < 5 : # checking if correct selection
+                list_of_functions[int(selection)]() #calls the function from list_of_functions dictionary
+            else:
+                print("{}".format("You have entered wrong selection key. Try again:"))
+                pass
+        except:
             print("{}".format("You have entered wrong selection key. Try again:"))
             pass
-    except:
-        print("{}".format("You have entered wrong selection key. Try again:"))
-        pass
+

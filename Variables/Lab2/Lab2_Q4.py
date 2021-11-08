@@ -8,7 +8,8 @@
 # Copyright:   (c) Vitaliy Baseckas 2021
 # Licence:     <your licence>
 # -------------------------------------------------------------------------------
-'''Assume that the following is a single line taken from a *Nix password file. Separate out each field into
+'''
+Question 4:Assume that the following is a single line taken from a *Nix password file. Separate out each field into
 the appropriate variables using the slice operator [].
 rlennon:x:1234:1001:Ruth Lennon:/users/rlennon:/bin/bash
 Repeat the process using the split method.'''

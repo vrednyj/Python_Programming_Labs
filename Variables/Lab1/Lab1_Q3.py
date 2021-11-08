@@ -1,4 +1,13 @@
-
+# -------------------------------------------------------------------------------
+# Name:        Lab1_Q3.py
+# Project:     Python_Programming_Labs
+#
+# Author:      Vitaliy Baseckas
+#
+# Created:     08.11.2021
+# Copyright:   (c) Vitaliy Baseckas 2021
+# Licence:     <your licence>
+# -------------------------------------------------------------------------------
 '''Consider the type of information and it’s structure for the following items. You are not asked to code
 anything here. Just consider the information:
 • ppsn

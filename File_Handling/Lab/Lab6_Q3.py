@@ -38,15 +38,17 @@ def practice_q (dir_for_search):
     else:
         pass
 
-dir_for_search=input("Please enter the directory for search:")
-practice_q(dir_for_search)
 
-if list_of_files_for_analisys == []:
-    print("No files with txt or doc extensions found is the current directory.")
-else:
-    report_file=open("report_file.log", "w")
-    for i in list_of_files_for_analisys:
-        report_file.write(i+"\n")
-    #print(list_of_files_for_analisys)
-    report_file.close()
-    print("Please check {} file to see reports".format(report_file.name))
+if __name__=='__main__':
+    dir_for_search=input("Please enter the directory for search:")
+    practice_q(dir_for_search)
+
+    if list_of_files_for_analisys == []:
+        print("No files with txt or doc extensions found is the current directory.")
+    else:
+        report_file=open("report_file.log", "w")
+        for i in list_of_files_for_analisys:
+            report_file.write(i+"\n")
+        #print(list_of_files_for_analisys)
+        report_file.close()
+        print("Please check {} file to see reports".format(report_file.name))

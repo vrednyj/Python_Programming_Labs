@@ -9,6 +9,7 @@
 # Licence:     <your licence>
 # -------------------------------------------------------------------------------
 '''
+Question 2:
 From the python_mission string indicated in the previous question find the last instance of the word
 Python. Use only string methods and variables to carry out this task. Do not use loops or selection
 structures
