@@ -42,7 +42,7 @@ def exit_the_program():
     print("{}".format("Terminating the program"))
     exit()
 
-list_of_functions={1: lambda: list_of_cources(),2: lambda: edit_the_cources(),3: lambda: print_name_of_cources(),4: lambda: check_the_words_cources()}
+#list_of_functions={1: lambda: list_of_cources(),2: lambda: edit_the_cources(),3: lambda: print_name_of_cources(),4: lambda: check_the_words_cources()}
 
 def print_main_menu():
     '''
@@ -59,6 +59,8 @@ def print_main_menu():
 
 #print_main_menu()
 if __name__=='__main__':
+    list_of_functions = {1: lambda: list_of_cources(), 2: lambda: edit_the_cources(),
+                         3: lambda: print_name_of_cources(), 4: lambda: check_the_words_cources()}
 
     while True:
         print_main_menu()

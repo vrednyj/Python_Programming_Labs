@@ -37,12 +37,13 @@ def practice_q (dir_for_search):
         print("The contents of this directory is: {} bytes".format(total_size))
     else:
         pass
+    return list_of_files_for_analisys
 
-
-if __name__=='__main__':
-    dir_for_search=input("Please enter the directory for search:")
-    practice_q(dir_for_search)
-
+def analisys_of_files (anyinfo: list ):
+    """
+    Practice Question for File Handling
+    :return:
+    """
     if list_of_files_for_analisys == []:
         print("No files with txt or doc extensions found is the current directory.")
     else:
@@ -52,3 +53,10 @@ if __name__=='__main__':
         #print(list_of_files_for_analisys)
         report_file.close()
         print("Please check {} file to see reports".format(report_file.name))
+
+
+if __name__=='__main__':
+    dir_for_search=input("Please enter the directory for search:")
+    practice_q(dir_for_search)
+    analisys_of_files(list_of_files_for_analisys)
+
